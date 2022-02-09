@@ -1,5 +1,20 @@
+import { css, keyframes } from "styled-components"
 import styled from 'styled-components'
 
+//==Animations==
+
+const fadeDown = keyframes`
+    0%{
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(1);
+        opacity: 1;
+    }
+`
+
+//==Divs==
 export const NavContainer = styled.nav`
     display: flex;
     height: 5vh;
@@ -17,6 +32,9 @@ export const LogoWrapper = styled.div`
 `
 
 export const Logo = styled.img`
+    :hover{
+        cursor: pointer;
+    }
 `
 
 export const ItemsWrapper = styled.div`
@@ -25,9 +43,23 @@ export const ItemsWrapper = styled.div`
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 `
 
 export const NavLink = styled.div`
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease;
+    opacity: 0;
 
+    :hover{
+        cursor: pointer;
+        color: var(--accent);
+    }
+
+    animation: ${
+    props => 
+    props.animate ? css`${fadeDown} .5s ease ${props.delay} forwards`
+    : "none"}
 `
+

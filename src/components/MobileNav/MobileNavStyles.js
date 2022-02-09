@@ -10,23 +10,33 @@ export const MobileContainer = styled.div`
 
     height: 100vh;
     width: 100vw;
-    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
     
     transition: all .2s ease;
     transform: ${props=>props.isOpen ? "scaleX(1)" : "scaleX(0)"};
     transform-origin: right;
+
+    font-size: 2rem;
 }
 
 `
 export const SidebarWrapper = styled.div`
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     background: var(--nav-background);
     box-shadow: -3px 0px 5px 1px grey;
+
+    display: flex;
+    justify-content: center;
 `
 
 export const MobileItemWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 3rem;
 `
 
 export const MobileItem = styled.div`

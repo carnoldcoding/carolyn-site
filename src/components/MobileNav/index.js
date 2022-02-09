@@ -11,14 +11,18 @@ import {useState} from 'react'
 
 const MobileNav = ({toggle, isOpen}) => {
 
+  const button = () => {
+
+  }
+
   return (
     <>
     <MobileContainer isOpen={isOpen}>
       <SidebarWrapper>
         <MobileItemWrapper>
-          <MobileItem>
-
-          </MobileItem>
+          <MobileItem>About</MobileItem>
+          <MobileItem>Services</MobileItem>
+          <MobileItem>Contact</MobileItem>
         </MobileItemWrapper>
       </SidebarWrapper>
     </MobileContainer>

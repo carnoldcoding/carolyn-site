@@ -1,5 +1,6 @@
 import { css, keyframes } from "styled-components"
 import styled from 'styled-components'
+import logo from '../../assets/nav_logo_sharaway.png'
 
 //==Animations==
 
@@ -23,18 +24,23 @@ export const NavContainer = styled.nav`
 
     padding: 1rem 5rem;
     box-shadow: 0 1px 3px 1px #333;
+
+    @media screen and (max-width: 800px){
+        padding: 1rem;
+    }
 `
 
 export const LogoWrapper = styled.div`
     flex: 1 1 20%;
-    display: flex;
     justify-content: flex-start;
 `
 
-export const Logo = styled.img`
-    :hover{
-        cursor: pointer;
-    }
+export const Logo = styled.div`
+    background: url(${logo});
+    height: 100%;
+    min-width: 10em;
+    background-size: contain;
+    background-repeat: no-repeat;
 `
 
 export const ItemsWrapper = styled.div`
@@ -44,6 +50,11 @@ export const ItemsWrapper = styled.div`
     align-items: center;
     gap: 3rem;
     font-size: 1.3rem;
+
+
+    @media screen and (max-width: 800px){
+        transform: scaleX(0);
+    }
 `
 
 export const NavLink = styled.div`

@@ -4,16 +4,11 @@ import {
   MobileItemWrapper,
   MobileItem,
   SidebarWrapper,
-  MobileBars
+  MobileBars,
 } from './MobileNavStyles'
 import {FaBars, FaTimes} from 'react-icons/fa';
-import {useState} from 'react'
 
 const MobileNav = ({toggle, isOpen}) => {
-
-  const button = () => {
-
-  }
 
   return (
     <>

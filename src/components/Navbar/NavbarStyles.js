@@ -17,6 +17,7 @@ const fadeDown = keyframes`
 
 //==Divs==
 export const NavContainer = styled.nav`
+    z-index: 2;
     display: flex;
     opacity: ${props=>props.isOpen ? 0 : 1};
 

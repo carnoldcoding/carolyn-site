@@ -3,13 +3,13 @@ import css from "styled-components"
 
 export const MobileContainer = styled.div`
     display: flex;
-    z-index: 2;
-    position: absolute;
+    z-index: 3;
+    position: fixed;
     top: 0;
     right: 0;
 
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     align-items: flex-end;
     flex-direction: column;
     
@@ -40,17 +40,17 @@ export const MobileItemWrapper = styled.div`
 `
 
 export const MobileItem = styled.div`
-
+    
 `
 
 export const MobileBars = styled.div`
     display: none;
     @media screen and (max-width: 800px){
-        z-index: 3;
-        display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
+        z-index: 4;
+        display: block;
         transform: translate(-100%, 50%);
         font-size: 2rem;
         cursor: pointer;

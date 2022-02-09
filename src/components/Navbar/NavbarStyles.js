@@ -18,12 +18,18 @@ const fadeDown = keyframes`
 //==Divs==
 export const NavContainer = styled.nav`
     display: flex;
+    opacity: ${props=>props.isOpen ? 0 : 1};
+
     height: 5vh;
     background: var(--nav-background);
     position: sticky;
+    top: 0;
+    left: 0;
 
     padding: 1rem;
     box-shadow: 0 1px 3px 1px #333;
+
+    transition: all .2s ease;
 `
 
 export const LogoWrapper = styled.div`
@@ -69,4 +75,3 @@ export const NavLink = styled.div`
     props.animate ? css`${fadeDown} .5s ease ${props.delay} forwards`
     : "none"}
 `
-

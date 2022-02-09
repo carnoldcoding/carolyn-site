@@ -4,14 +4,15 @@ import {
   LogoWrapper,
   Logo,
   ItemsWrapper,
-  NavLink
+  NavLink,
 } from './NavbarStyles'
 
 
-const Navbar = () => {
+const Navbar = ({toggle, isOpen}) => {
+  console.log({isOpen});
   return (
     <>
-        <NavContainer>
+        <NavContainer isOpen={isOpen}>
             <LogoWrapper>
                 <Logo/>
             </LogoWrapper>

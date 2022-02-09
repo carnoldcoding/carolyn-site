@@ -22,12 +22,8 @@ export const NavContainer = styled.nav`
     background: var(--nav-background);
     position: sticky;
 
-    padding: 1rem 5rem;
+    padding: 1rem;
     box-shadow: 0 1px 3px 1px #333;
-
-    @media screen and (max-width: 800px){
-        padding: 1rem;
-    }
 `
 
 export const LogoWrapper = styled.div`

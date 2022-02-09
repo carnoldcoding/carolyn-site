@@ -6,7 +6,6 @@ import {
   ItemsWrapper,
   NavLink
 } from './NavbarStyles'
-import logo from '../../assets/nav_logo_sharaway.png'
 
 
 const Navbar = () => {
@@ -14,7 +13,7 @@ const Navbar = () => {
     <>
         <NavContainer>
             <LogoWrapper>
-                <Logo src={logo}/>
+                <Logo/>
             </LogoWrapper>
             <ItemsWrapper>
                 <NavLink animate={true} delay={"0s"}> About </NavLink>

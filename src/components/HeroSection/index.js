@@ -1,25 +1,19 @@
 import React from 'react'
 import {
     HeroContainer,
-    FixedBackground,
-    Scrollbar,
-    ScrollbarText
+    ImageWrapper,
+    Image
 } from './HeroStyles'
 
-import bg1 from '../../assets/star_mountains.jpeg'
-import bg2 from '../../assets/clear_mountains.jpeg'
+import banner from '../../assets/logo.jpg'
 
 const HeroSection = () => {
   return (
     <>
     <HeroContainer>
-        <FixedBackground image={bg1}></FixedBackground>
-        <Scrollbar>
-            <ScrollbarText>
-            DEVELOP, GROW, & SUSTAIN YOUR NONPROFIT
-            </ScrollbarText>
-        </Scrollbar>
-        <FixedBackground image={bg2}></FixedBackground>
+      <ImageWrapper>
+        <Image src={banner}></Image>
+      </ImageWrapper>
     </HeroContainer>
     </>
   )

@@ -2,7 +2,10 @@ import './App.css';
 import Navbar from './components/Navbar'
 import MobileNav from './components/MobileNav'
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
 import {useState} from 'react'
+
+import {information} from './components/AboutSection/data'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +18,7 @@ function App() {
       <Navbar toggle={toggle} isOpen={isOpen}/>
       <MobileNav toggle={toggle} isOpen={isOpen}/>
       <HeroSection/>
+      <AboutSection {...information}/>
     </div>
   );
 }

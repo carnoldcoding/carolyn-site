@@ -11,7 +11,6 @@ import {
 import banner from '../../assets/logo.jpg'
 
 const HeroSection = () => {
-
   return (
     <>
     <HeroContainer>

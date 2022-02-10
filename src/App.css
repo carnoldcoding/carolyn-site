@@ -3,6 +3,8 @@
 :root{
   --nav-background: rgb(253, 249, 242);
   --accent: rgb(243, 158, 0);
+  --blue: #085895;
+  --lightblue: #2d94e2;
 }
 
 *{

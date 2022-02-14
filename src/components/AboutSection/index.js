@@ -21,10 +21,10 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
 
   return (
     <AboutContainer id = "about">
-        <AboutWrapper>
-            <ImageWrapper
+        <AboutWrapper
             ref={ref}
             animate={inView ? true : false}>
+            <ImageWrapper>
                 <Image src={pfp}>
                 </Image>
                 <ImageText>

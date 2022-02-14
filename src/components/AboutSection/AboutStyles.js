@@ -18,6 +18,16 @@ export const fadeLeft = keyframes`
         transform: translateX(0);
     }
 `
+export const fadeRight = keyframes`
+    0%{
+        opacity:0;
+        transform: translateX(-20vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+`
 
 export const fadeIn = keyframes`
     100%{
@@ -49,6 +59,10 @@ export const AboutWrapper = styled.div`
     background: var(--tblue);
     border-radius: 1rem;
     padding: 1rem;
+
+    box-shadow: 0 0 10px 1px black;
+
+
     
     @media screen and (max-width: 800px){
         flex-direction: column;
@@ -56,6 +70,12 @@ export const AboutWrapper = styled.div`
         padding: 3rem 1rem;
         gap: 1rem;
     }
+
+    animation-duration: var(--duration);
+    animation-name: ${props=>props.animate ? css`${fadeRight}` : null};
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
 `
 
 export const ImageWrapper = styled.div`
@@ -66,12 +86,6 @@ export const ImageWrapper = styled.div`
     flex-direction: column;
 
     gap: 1rem;
-
-    animation-duration: var(--duration);
-    animation-name: ${props=>props.animate ? css`${fadeIn}` : null};
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    opacity: 0;
 
 
 `

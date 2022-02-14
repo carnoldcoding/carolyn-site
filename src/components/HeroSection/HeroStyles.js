@@ -25,7 +25,12 @@ export const HeroContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+
+    @media screen and (max-width: 800px){
+        height: 50vh;
+    }
 `
 
 export const ImageWrapper = styled.div`

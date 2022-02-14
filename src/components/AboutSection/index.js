@@ -16,7 +16,7 @@ import pfp from '../../assets/pfp.jpg'
 
 const About = ({p1, p2, p3, imgTxt, title}) => {
     const { ref, inView } = useInView({
-        threshold: .1
+        threshold: .5
     });
 
   return (

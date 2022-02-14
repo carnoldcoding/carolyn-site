@@ -1,5 +1,6 @@
 import { keyframes } from "styled-components"
 import styled from 'styled-components'
+import {Link as LinkS} from 'react-scroll'
 /*
     ==Animations==
 */
@@ -74,6 +75,6 @@ export const ButtonWrapper = styled.div`
     animation:${fadeUp} 1s ease 1s forwards;
 `
 
-export const Button = styled.div`
+export const Button = styled(LinkS)`
 
 `

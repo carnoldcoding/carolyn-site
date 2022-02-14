@@ -20,7 +20,7 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
     });
 
   return (
-    <AboutContainer>
+    <AboutContainer id = "about">
         <AboutWrapper>
             <ImageWrapper
             ref={ref}

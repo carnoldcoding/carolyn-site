@@ -18,7 +18,7 @@ const HeroSection = () => {
         <Image src={banner}></Image>
       </ImageWrapper>
       <ButtonWrapper>
-        <Button>Get Started</Button>
+        <Button to="about" duration={1000} smooth={true} spy={true}>Get Started</Button>
       </ButtonWrapper>
     </HeroContainer>
     </>

@@ -11,13 +11,20 @@ import {
     InfoWrapper,
     Info
 } from './AboutStyles'
+import {useInView} from 'react-intersection-observer'
 import pfp from '../../assets/pfp.jpg'
 
 const About = ({p1, p2, p3, imgTxt, title}) => {
+    const { ref, inView } = useInView({
+        threshold: .1
+    });
+
   return (
     <AboutContainer>
         <AboutWrapper>
-            <ImageWrapper>
+            <ImageWrapper
+            ref={ref}
+            animate={inView ? true : false}>
                 <Image src={pfp}>
                 </Image>
                 <ImageText>
@@ -26,12 +33,14 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
             </ImageWrapper>
             <ContentWrapper>
                 <TitleWrapper>
-                    <Title>
+                    <Title
+                    ref={ref}
+                    animate={inView ? true : false}>
                         {title}
                     </Title>
                 </TitleWrapper>
                 <InfoWrapper>
-                    <Info>
+                    <Info ref={ref} animate={inView ? true : false}>
                         {p1}<br /><br />
                         {p2}<br /><br />
                         {p3}<br /><br />

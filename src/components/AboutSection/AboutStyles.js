@@ -1,7 +1,32 @@
 import styled from 'styled-components'
-import {keyframes} from 'styled-components'
+import {keyframes, css} from 'styled-components'
 import mountain from '../../assets/clear_mountains.jpeg'
 
+/*
+ ==Animations==
+*/
+export const nothing = keyframes`
+   
+`
+export const fadeLeft = keyframes`
+    0%{
+        opacity:0;
+        transform: translateX(10vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+`
+
+export const fadeIn = keyframes`
+    100%{
+        opacity: 1;
+    }
+`
+/*
+    ==Divs==
+*/
 export const AboutContainer = styled.div`
     margin-top: 10rem;
     display: flex;
@@ -41,6 +66,14 @@ export const ImageWrapper = styled.div`
     flex-direction: column;
 
     gap: 1rem;
+
+    animation-duration: var(--duration);
+    animation-name: ${props=>props.animate ? css`${fadeIn}` : null};
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
+
+
 `
 
 export const Image = styled.img`
@@ -74,7 +107,16 @@ export const TitleWrapper = styled.div`
 `
 
 export const Title = styled.div`
+    opacity: 0;
+
     font-size: 3rem;
+    
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+    animation-name: ${props=>props.animate ? css`${fadeLeft}` : null};
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
     @media screen and (max-width: 800px){
         font-size: 2.3rem;
     }
@@ -85,5 +127,10 @@ export const InfoWrapper = styled.div`
 `
 
 export const Info = styled.div`
-
+    opacity: 0;
+    animation-duration: var(--duration);
+    animation-delay: calc(var(--delay) * 2);
+    animation-name: ${props=>props.animate ? css`${fadeLeft}` : null};
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 `

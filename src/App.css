@@ -8,6 +8,9 @@
   --lightblue: #2d94e2;
   --subtitle: 1rem;
   --header: 2rem;
+
+  --duration: 1s;
+  --delay: 1s;
 }
 
 *{

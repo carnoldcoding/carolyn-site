@@ -4,8 +4,10 @@
   --nav-background: rgb(253, 249, 242);
   --accent: rgb(243, 158, 0);
   --blue: rgb(8, 88, 149);
-  --tblue: rgb(8, 88, 149, .8);
+  --tblue: rgb(8, 88, 149, .85);
   --lightblue: #2d94e2;
+  --subtitle: 1rem;
+  --header: 2rem;
 }
 
 *{

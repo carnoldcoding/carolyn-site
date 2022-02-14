@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {keyframes} from 'styled-components'
+import mountain from '../../assets/clear_mountains.jpeg'
 
 export const AboutContainer = styled.div`
     margin-top: 10rem;
@@ -8,15 +9,28 @@ export const AboutContainer = styled.div`
     padding: 5rem 10rem;
 
     @media screen and (max-width: 800px){
+        padding: 1rem
+    }
+
+    background-image: url(${mountain});
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+`
+
+export const AboutWrapper = styled.div`
+    display: flex;
+
+    background: var(--tblue);
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    @media screen and (max-width: 800px){
         flex-direction: column;
         align-items: center;
         padding: 3rem 1rem;
         gap: 1rem;
     }
-
-    background: linear-gradient(var(--blue), var(--lightblue));
-    color: white;
-
 `
 
 export const ImageWrapper = styled.div`
@@ -38,7 +52,7 @@ export const Image = styled.img`
 `
 
 export const ImageText = styled.div`
-
+    
 `
 
 export const ContentWrapper = styled.div`
@@ -46,13 +60,13 @@ export const ContentWrapper = styled.div`
     height: 100%;
     width: 100%;
 
-    background: var(--tblue);
     border-radius: 1rem;
     padding: 1rem;
 `
 
 export const TitleWrapper = styled.div`
     display: flex;
+    margin-bottom: 1rem;
 
     @media screen and (max-width: 800px){
         justify-content: center;

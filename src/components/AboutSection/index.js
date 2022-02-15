@@ -27,10 +27,6 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
         setAnimated(false);
     }
 
-    useEffect = (() => {
-        console.log("here");
-    })
-
   return (
     <AboutContainer id = "about">
         <AboutWrapper

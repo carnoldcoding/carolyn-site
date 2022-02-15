@@ -1,8 +1,20 @@
 import styled from 'styled-components'
 
+export const CardWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    transform: translateY(40vh);
+
+    transition: .2s all ease;
+`
+
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     
     height: 40vh;
     width: 15vw;
@@ -21,14 +33,12 @@ export const CardContainer = styled.div`
     transition: all .2s ease;
     :hover{
         box-shadow: 0 0 10px 1px black;
+        ${CardWrapper}{
+            transform: translateY(0);
+        }
     }
-`
 
-export const CardWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+    overflow: hidden;
 `
 
 export const CardTitle = styled.div`

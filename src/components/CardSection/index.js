@@ -12,8 +12,6 @@ const CardSection = () => {
     <Container>
         <CardsWrapper>
           <Card {...card1}/>
-          <Card {...card1}/>
-          <Card {...card1}/>
         </CardsWrapper>
     </Container>
     </>

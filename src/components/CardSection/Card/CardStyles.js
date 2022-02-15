@@ -20,20 +20,40 @@ export const CardContainer = styled.div`
 
     transition: all .2s ease;
     :hover{
-        cursor: pointer;
         box-shadow: 0 0 10px 1px black;
-        transform: scale(1.02);
     }
 `
 
 export const CardWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 `
 
 export const CardTitle = styled.div`
-
+    font-size: var(--header);
 `
 
 export const CardSubtitle = styled.div`
 
+`
+
+export const CardButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+
+    color: black;
+`
+
+export const CardButton = styled.div`
+    border-radius: 1rem;
+    background: orange;
+    padding: 1rem;
+
+    transition: all .2s ease;
+    :hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 `

@@ -3,7 +3,9 @@ import {
     CardContainer,
     CardWrapper,
     CardTitle,
-    CardSubtitle
+    CardSubtitle,
+    CardButtonWrapper,
+    CardButton
 } from './CardStyles'
 import {useState} from 'react';
 
@@ -20,6 +22,11 @@ const Card = ({title, subtitle}) => {
             <CardSubtitle>
                 {subtitle}
             </CardSubtitle>
+            <CardButtonWrapper>
+                <CardButton>
+                    Learn more
+                </CardButton>
+            </CardButtonWrapper>
         </CardWrapper>
     </CardContainer>
     </>

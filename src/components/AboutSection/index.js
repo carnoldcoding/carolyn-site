@@ -17,7 +17,7 @@ import pfp from '../../assets/pfp.jpg'
 
 const About = ({p1, p2, p3, imgTxt, title}) => {
     const { ref, inView } = useInView({
-        threshold: .4
+        threshold: .2
     });
 
     const [animated, setAnimated] = useState(false);

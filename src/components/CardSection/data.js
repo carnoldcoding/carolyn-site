@@ -1,4 +1,4 @@
 export const card1 = {
-    title: "Card Title",
-    subtitle: "Card Subtitle"
+    title: "Why Us?",
+    subtitle: "Because we care. About you, and your company"
 }

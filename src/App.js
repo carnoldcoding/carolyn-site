@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import MobileNav from './components/MobileNav'
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
+import CardSection from './components/CardSection';
 import {useState} from 'react'
 
 import {information} from './components/AboutSection/data'
@@ -19,6 +20,7 @@ function App() {
       <MobileNav toggle={toggle} isOpen={isOpen}/>
       <HeroSection/>
       <AboutSection {...information}/>
+      <CardSection />
     </div>
   );
 }

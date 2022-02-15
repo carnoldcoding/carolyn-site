@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import {
     AboutContainer,
     AboutWrapper,
@@ -16,14 +17,21 @@ import pfp from '../../assets/pfp.jpg'
 
 const About = ({p1, p2, p3, imgTxt, title}) => {
     const { ref, inView } = useInView({
-        threshold: .5
+        threshold: .4
     });
+
+    const [animated, setAnimated] = useState(false);
+
+    const animationState = () => {
+        console.log("here");
+        setAnimated(false);
+    }
 
   return (
     <AboutContainer id = "about">
         <AboutWrapper
             ref={ref}
-            animate={inView ? true : false}>
+            animate={inView}>
             <ImageWrapper>
                 <Image src={pfp}>
                 </Image>
@@ -35,12 +43,12 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
                 <TitleWrapper>
                     <Title
                     ref={ref}
-                    animate={inView ? true : false}>
+                    animate={inView}>
                         {title}
                     </Title>
                 </TitleWrapper>
                 <InfoWrapper>
-                    <Info ref={ref} animate={inView ? true : false}>
+                    <Info ref={ref} animate={inView} >
                         {p1}<br /><br />
                         {p2}<br /><br />
                         {p3}<br /><br />

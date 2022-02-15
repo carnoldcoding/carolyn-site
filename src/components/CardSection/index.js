@@ -3,15 +3,17 @@ import {
     Container,
     CardsWrapper
 } from  './CardSectionStyles'
-
 import Card from './Card'
+import { card1 } from './data'
 
 const CardSection = () => {
   return (
     <>
     <Container>
         <CardsWrapper>
-          <Card />
+          <Card {...card1}/>
+          <Card {...card1}/>
+          <Card {...card1}/>
         </CardsWrapper>
     </Container>
     </>

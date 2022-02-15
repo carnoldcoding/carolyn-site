@@ -5,10 +5,12 @@ export const CardWrapper = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    width: 100%;
 
-    transform: translateY(40vh);
+    transform: translateY(14vh);
+    background: linear-gradient(transparent, black);
 
-    transition: .2s all ease;
+    transition: .5s all ease-out;
 `
 
 export const CardContainer = styled.div`
@@ -30,15 +32,19 @@ export const CardContainer = styled.div`
         height: 50vh;
     }
 
-    transition: all .2s ease;
     :hover{
         box-shadow: 0 0 10px 1px black;
         ${CardWrapper}{
             transform: translateY(0);
         }
+        cursor: pointer;
     }
 
     overflow: hidden;
+`
+
+export const CardTitleWrapper = styled.div`
+    display: flex;
 `
 
 export const CardTitle = styled.div`

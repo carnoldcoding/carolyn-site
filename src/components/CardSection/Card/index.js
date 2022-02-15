@@ -2,28 +2,34 @@ import React from 'react'
 import {
     CardContainer,
     CardWrapper,
+    CardTitleWrapper,
     CardTitle,
     CardSubtitle,
     CardButtonWrapper,
     CardButton
 } from './CardStyles'
 import {useState} from 'react';
+import CardModal from '../CardModal';
 
 const Card = ({title, subtitle}) => {
-    const [active, setActive] = useState(false);
-    const toggle = () =>{setActive(!active); console.log("Working")}
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => {setIsOpen(!isOpen)};
+    
   return (
     <>
+    <CardModal isOpen={isOpen} toggle={toggle}/>
     <CardContainer>
-        <CardWrapper onClick={toggle}>
-            <CardTitle>
-                {title}
-            </CardTitle>
+        <CardWrapper>
+            <CardTitleWrapper>
+                <CardTitle>
+                    {title}
+                </CardTitle>
+            </CardTitleWrapper>
             <CardSubtitle>
                 {subtitle}
             </CardSubtitle>
             <CardButtonWrapper>
-                <CardButton>
+                <CardButton onClick={toggle}>
                     Learn more
                 </CardButton>
             </CardButtonWrapper>

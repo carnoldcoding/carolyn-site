@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
     AboutContainer,
     AboutWrapper,
@@ -27,10 +27,15 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
         setAnimated(false);
     }
 
+    useEffect = (() => {
+        console.log("here");
+    })
+
   return (
     <AboutContainer id = "about">
         <AboutWrapper
-            ref={ref}>
+            ref={ref}
+            animate={inView}>
             <ImageWrapper>
                 <Image src={pfp}>
                 </Image>
@@ -41,12 +46,13 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
             <ContentWrapper>
                 <TitleWrapper>
                     <Title
-                    ref={ref}>
+                    ref={ref}
+                    animate={inView}>
                         {title}
                     </Title>
                 </TitleWrapper>
                 <InfoWrapper>
-                    <Info ref={ref}>
+                    <Info ref={ref} animate={inView} >
                         {p1}<br /><br />
                         {p2}<br /><br />
                         {p3}<br /><br />

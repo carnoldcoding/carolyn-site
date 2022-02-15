@@ -30,8 +30,7 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
   return (
     <AboutContainer id = "about">
         <AboutWrapper
-            ref={ref}
-            animate={inView}>
+            ref={ref}>
             <ImageWrapper>
                 <Image src={pfp}>
                 </Image>
@@ -42,13 +41,12 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
             <ContentWrapper>
                 <TitleWrapper>
                     <Title
-                    ref={ref}
-                    animate={inView}>
+                    ref={ref}>
                         {title}
                     </Title>
                 </TitleWrapper>
                 <InfoWrapper>
-                    <Info ref={ref} animate={inView} >
+                    <Info ref={ref}>
                         {p1}<br /><br />
                         {p2}<br /><br />
                         {p3}<br /><br />

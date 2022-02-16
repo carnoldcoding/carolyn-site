@@ -1,4 +1,20 @@
-import styled from 'styled-components'
+import { editableInputTypes } from '@testing-library/user-event/dist/utils'
+import styled, { keyframes } from 'styled-components'
+import {css} from 'styled-components'
+
+/*
+    ==Animations==
+*/
+export const fadeDown = keyframes`
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+/*
+    ==Divs==
+*/
 
 export const CardWrapper = styled.div`
     display: flex;
@@ -44,6 +60,11 @@ export const CardContainer = styled.div`
     }
 
     overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(-20vh);
+    
+    animation: ${fadeDown} 2s ease forwards ${props=>props.delay};
 `
 
 export const CardTitleWrapper = styled.div`

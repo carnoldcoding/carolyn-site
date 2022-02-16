@@ -14,7 +14,8 @@ export const card1 = {
         <li>Tangible results that are attainable and sustainable</li>
         <li>Open access to knowledgeable consultants for quick questions, troubleshooting, and to celebrate your successes</li>
     </ul>,
-    background: bg1
+    background: bg1,
+    delay: '0s'
 }
 
 export const card2 = {
@@ -23,6 +24,7 @@ export const card2 = {
     modalHeader: "Our Goal",
     modalContent: "SSDC supports the nonprofit by acting as a trusted advisors whose mission and vision aligns with her own; their constituencies through enhanced impact of the organizations mission; and her family by providing resources and lifestyle that fulfills our dreams.",
     background: bg2,
+    delay: '.5s'
 }
 
 export const card3 = {
@@ -31,7 +33,8 @@ export const card3 = {
     modalHeader: "What is a CFRE?",
     modalContent: `To earn CFRE certification, fundraising professionals must meet education, professional practice, and professional performance requirements, pass a comprehensive exam on best practices in ethical fundraising; and attest that they are knowledgeable and abide by the International Statement of Ethical Principles in Fundraising as well as laws governing fundraising in their region of practice.
     By hiring a CFRE professional, you have full confidence that your fundraising team members are using current best practices, are from knowledgeable backgrounds and are dedicated to ethical fundraising.`,
-    background: bg3
+    background: bg3,
+    delay: '1s'
 }
 
 export const card4 = {
@@ -47,5 +50,6 @@ export const card4 = {
         <li>Work commences and we move ahead to develop your nonprofit's resources! </li>
     </ul>
     </>,
-    background: bg4
+    background: bg4,
+    delay: '1.5s'
 }

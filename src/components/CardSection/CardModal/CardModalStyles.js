@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {css} from 'styled-components'
 
 export const ModalContainer = styled.div`
-    z-index: 1;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@ export const ModalHeaderWrapper = styled.div`
 `
 
 export const ModalHeader = styled.div`
-
+    text-decoration: underline;
 `
 
 export const ModalSubtitleWrapper = styled.div`

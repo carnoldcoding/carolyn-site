@@ -5,21 +5,29 @@ import {
     ModalHeaderWrapper,
     ModalHeader,
     ModalSubtitleWrapper,
-    ModalSubtitle
+    ModalSubtitle,
+    ModalButtonWrapper,
+    ModalButton
 } from './CardModalStyles'
+import {FaWindowClose} from 'react-icons/fa'
 
-const CardModal = ({isOpen, toggle}) => {
+const CardModal = ({isOpen, toggle, modalHeader, modalContent}) => {
   return (
-    <ModalContainer isOpen={isOpen} onClick={toggle}>
+    <ModalContainer isOpen={isOpen}>
         <ModalWrapper>
+            <ModalButtonWrapper>
+                <ModalButton onClick={toggle}>
+                    <FaWindowClose />
+                </ModalButton>
+            </ModalButtonWrapper>
             <ModalHeaderWrapper>
                 <ModalHeader>
-                    Header
+                    {modalHeader}
                 </ModalHeader>
             </ModalHeaderWrapper>
             <ModalSubtitleWrapper>
                 <ModalSubtitle>
-                    Subtitle
+                    {modalContent}
                 </ModalSubtitle>
             </ModalSubtitleWrapper>
         </ModalWrapper>

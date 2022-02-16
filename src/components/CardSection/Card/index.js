@@ -11,13 +11,14 @@ import {
 import {useState} from 'react';
 import CardModal from '../CardModal';
 
-const Card = ({title, subtitle}) => {
+const Card = ({title, subtitle, modalHeader, modalContent}) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {setIsOpen(!isOpen)};
     
   return (
     <>
-    <CardModal isOpen={isOpen} toggle={toggle}/>
+    <CardModal isOpen={isOpen} toggle={toggle} 
+    modalHeader={modalHeader} modalContent={modalContent}/>
     <CardContainer>
         <CardWrapper>
             <CardTitleWrapper>

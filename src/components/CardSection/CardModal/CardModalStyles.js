@@ -13,7 +13,6 @@ export const ModalContainer = styled.div`
     height: 100vh;
     width: 100vw;
     transition: all .5s ease;
-    transform-origin: top;
 
 
     /*
@@ -24,9 +23,12 @@ export const ModalContainer = styled.div`
 `
 
 export const ModalWrapper = styled.div`
-    height: 40vh;
     width: 40vw;
     
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
     background: rgb(0, 50, 100, .95);
     color: white;
     border: 2px solid orange;
@@ -34,13 +36,14 @@ export const ModalWrapper = styled.div`
     border-radius: 1rem;
 
     @media screen and (max-width: 800px){
-        height: 40vh;
         width: 80%;
     }
 `
 
 export const ModalHeaderWrapper = styled.div`
-
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
 `
 
 export const ModalHeader = styled.div`
@@ -48,9 +51,27 @@ export const ModalHeader = styled.div`
 `
 
 export const ModalSubtitleWrapper = styled.div`
-
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    line-height: 2rem;
 `
 
 export const ModalSubtitle = styled.div`
 
+`
+
+export const ModalButtonWrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+
+`
+
+export const ModalButton = styled.div`
+    transition: all .2s ease;
+    :hover{
+            cursor: pointer;
+            color: orange;
+        }
 `

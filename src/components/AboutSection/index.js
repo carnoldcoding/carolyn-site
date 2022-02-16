@@ -20,13 +20,6 @@ const About = ({p1, p2, p3, imgTxt, title}) => {
         threshold: .2
     });
 
-    const [animated, setAnimated] = useState(false);
-
-    const animationState = () => {
-        console.log("here");
-        setAnimated(false);
-    }
-
   return (
     <AboutContainer id = "about">
         <AboutWrapper

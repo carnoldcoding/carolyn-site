@@ -64,7 +64,7 @@ export const CardContainer = styled.div`
     opacity: 0;
     transform: translateY(-20vh);
     
-    animation: ${fadeDown} 2s ease forwards ${props=>props.delay};
+    animation: ${props=>props.animate ? css`${fadeDown} 2s ease forwards ${props=>props.delay}` : "none"};
 `
 
 export const CardTitleWrapper = styled.div`

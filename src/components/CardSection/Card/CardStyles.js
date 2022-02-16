@@ -7,8 +7,8 @@ export const CardWrapper = styled.div`
     padding: 1rem;
     width: 100%;
 
-    transform: translateY(14vh);
-    background: linear-gradient(transparent, black);
+    transform: translateY(40vh);
+    background: linear-gradient(transparent, rgb(0, 36, 77), black);
 
     transition: .5s all ease-out;
 `
@@ -22,8 +22,11 @@ export const CardContainer = styled.div`
     width: 15vw;
     color: white;
 
-    background: var(--tblue);
-
+    background-image: url(${props=>props.background});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(40, 130, 200);
     border-radius: 1rem;
     box-shadow: 0 0 5px 1px black;
 

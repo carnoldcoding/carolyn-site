@@ -25,10 +25,13 @@ export const ClientListButton = styled.div`
     background: black;
     color: var(--nav-background);
     transition: all .2s ease;
+    border: 1px solid black;
 
     :hover{
         cursor: pointer;
         transform: scale(1.05);
+        background: var(--nav-background);
+        color: black;
     }
 `
 

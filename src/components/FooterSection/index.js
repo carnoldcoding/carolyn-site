@@ -13,9 +13,12 @@ import {
 } from './FooterStyles'
 
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import FooterModal from './FooterModal';
+
 const Footer = () => {
   return (
     <>
+        <FooterModal />
         <FooterContainer>
             <FooterWrapper>
                 <ContactWrapper>

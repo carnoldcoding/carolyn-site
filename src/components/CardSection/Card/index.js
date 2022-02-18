@@ -10,7 +10,6 @@ import {
 } from './CardStyles'
 import {useState} from 'react';
 import CardModal from '../CardModal';
-import {useInView} from 'react-intersection-observer'
 
 
 const Card = ({title, subtitle, modalHeader, modalContent, background, delay, inView}) => {
@@ -24,12 +23,12 @@ const Card = ({title, subtitle, modalHeader, modalContent, background, delay, in
 
     <CardContainer background={background} delay={delay}
     animate={inView}>
+        <CardTitleWrapper>
+            <CardTitle>
+                {title}
+            </CardTitle>
+        </CardTitleWrapper>
         <CardWrapper>
-            <CardTitleWrapper>
-                <CardTitle>
-                    {title}
-                </CardTitle>
-            </CardTitleWrapper>
             <CardSubtitle>
                 {subtitle}
             </CardSubtitle>

@@ -21,7 +21,6 @@ export const CardWrapper = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    width: 100%;
 
     transform: translateY(40vh);
     background: linear-gradient(transparent, rgb(0, 36, 77), black);
@@ -31,9 +30,8 @@ export const CardWrapper = styled.div`
 
 export const CardContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
+    flex-direction: column;
+    justify-content: flex-end;
     height: 40vh;
     width: 15vw;
     color: white;
@@ -56,27 +54,30 @@ export const CardContainer = styled.div`
         ${CardWrapper}{
             transform: translateY(0);
         }
-        cursor: pointer;
     }
 
-    overflow: hidden;
 
     opacity: 0;
     transform: translateY(-20vh);
     
     animation: ${props=>props.animate ? css`${fadeDown} 2s ease forwards ${props=>props.delay}` : "none"};
+    overflow: hidden;
 `
 
 export const CardTitleWrapper = styled.div`
-    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+
 `
 
 export const CardTitle = styled.div`
     font-size: var(--header);
+    background: rgb(0,0,0,.4);
+    text-align: center;
+    padding: .25rem 0;
 `
 
 export const CardSubtitle = styled.div`
-
 `
 
 export const CardButtonWrapper = styled.div`

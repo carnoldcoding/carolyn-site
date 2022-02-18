@@ -14,11 +14,17 @@ import {
 
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
 import FooterModal from './FooterModal';
+import { useState } from 'react';
 
 const Footer = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    }
   return (
     <>
-        <FooterModal />
+        <FooterModal isOpen={isOpen} toggle={toggle}/>
         <FooterContainer>
             <FooterWrapper>
                 <ContactWrapper>
@@ -40,7 +46,7 @@ const Footer = () => {
                         <Icon><FaEnvelope /></Icon>
                     </IconsWrapper>
                     <ClientListWrapper>
-                        <ClientListButton>
+                        <ClientListButton onClick={toggle}>
                             Client List
                         </ClientListButton>
                     </ClientListWrapper>

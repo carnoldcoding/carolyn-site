@@ -1,3 +1,4 @@
+import { FaBalanceScale } from 'react-icons/fa'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -10,6 +11,9 @@ export const Container = styled.div`
     left: 0;
     height: 100%;
     width: 100%;
+
+    transform: ${props=>props.isOpen ? "scaleY(1)" : "scaleY(0)"};
+    transition: all .5s ease;
 `
 
 export const Wrapper = styled.div`

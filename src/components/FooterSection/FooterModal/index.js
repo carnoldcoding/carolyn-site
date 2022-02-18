@@ -19,13 +19,13 @@ import client6 from '../../../assets/client_6.png'
 import client7 from '../../../assets/client_7.jpg'
 
 
-const FooterModal = () => {
+const FooterModal = ({isOpen, toggle}) => {
   return (
     <>
-        <Container>
+        <Container isOpen={isOpen}>
           <Wrapper>
           <CloseWrapper>
-            <CloseButton>
+            <CloseButton onClick={toggle}>
               <FaWindowClose />
             </CloseButton>
           </CloseWrapper>

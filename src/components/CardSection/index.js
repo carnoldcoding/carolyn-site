@@ -5,16 +5,22 @@ import {
 } from  './CardSectionStyles'
 import Card from './Card'
 import { card1, card2, card3, card4 } from './data'
+import {useInView} from 'react-intersection-observer'
+
 
 const CardSection = () => {
+  const { ref, inView } = useInView({
+    threshold: .2
+});
+
   return (
     <>
     <Container>
-        <CardsWrapper>
-          <Card {...card1}/>
-          <Card {...card2}/>
-          <Card {...card3}/>
-          <Card {...card4}/>
+        <CardsWrapper ref={ref}>
+          <Card {...card1} inView={inView}/>
+          <Card {...card2} inView={inView}/>
+          <Card {...card3} inView={inView}/>
+          <Card {...card4} inView={inView}/>
         </CardsWrapper>
     </Container>
     </>

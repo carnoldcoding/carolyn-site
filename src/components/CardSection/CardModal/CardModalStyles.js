@@ -24,6 +24,8 @@ export const ModalContainer = styled.div`
 
 export const ModalWrapper = styled.div`
     width: 40vw;
+    height: 60vh;
+    overflow: auto;
     
     display: flex;
     flex-direction: column;
@@ -37,6 +39,7 @@ export const ModalWrapper = styled.div`
 
     @media screen and (max-width: 800px){
         width: 80%;
+        height: 70%;
     }
 `
 
@@ -55,6 +58,30 @@ export const ModalSubtitleWrapper = styled.div`
     justify-content: center;
     padding: 1.5rem;
     line-height: 2rem;
+    overflow: auto;
+
+    /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: orange; 
+    border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #ffc800; 
+    }
+
 `
 
 export const ModalSubtitle = styled.div`

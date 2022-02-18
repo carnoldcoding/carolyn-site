@@ -31,15 +31,15 @@ const FooterModal = ({isOpen, toggle}) => {
           </CloseWrapper>
             <IconRow>
               <IconColumn>
-                <IconWrapper><Icon src={client1}/></IconWrapper>
-                <IconWrapper><Icon src={client2}/></IconWrapper>
-                <IconWrapper><Icon src={client3}/></IconWrapper>
-                <IconWrapper><Icon src={client7}/></IconWrapper>
+                <IconWrapper href="https://cahnj.org/" target="_blank"><Icon src={client1}/></IconWrapper>
+                <IconWrapper href="https://urcommunitycares.org/" target="_blank"><Icon src={client2}/></IconWrapper>
+                <IconWrapper href="https://njwindsymphony.org/" target="_blank"><Icon src={client3}/></IconWrapper>
+                <IconWrapper href="https://brookdalepark.org/" target="_blank"><Icon src={client7}/></IconWrapper>
               </IconColumn>
               <IconColumn>
-                <IconWrapper><Icon src={client4}/></IconWrapper>
-                <IconWrapper><Icon src={client5}/></IconWrapper>
-                <IconWrapper><Icon src={client6}/></IconWrapper>
+                <IconWrapper href="https://www.onetruezone.org/" target="_blank"><Icon src={client4}/></IconWrapper>
+                <IconWrapper href="https://www.thephoenixcenternj.org/" target="_blank"><Icon src={client5}/></IconWrapper>
+                <IconWrapper href="https://www.facebook.com/theSFDF/" target="_blank"><Icon src={client6}/></IconWrapper>
               </IconColumn>
             </IconRow>
           </Wrapper>

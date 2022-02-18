@@ -46,8 +46,11 @@ export const Icon = styled.img`
     width: auto;
 `
 
-export const IconWrapper = styled.div`
-
+export const IconWrapper = styled.a`
+    transition: .2s all ease;
+    :hover{
+        transform: scale(1.1);
+    }
 `
 
 export const CloseWrapper = styled.div`

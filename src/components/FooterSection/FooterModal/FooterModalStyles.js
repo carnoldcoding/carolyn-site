@@ -14,6 +14,8 @@ export const Container = styled.div`
 
     transform: ${props=>props.isOpen ? "scaleY(1)" : "scaleY(0)"};
     transition: all .5s ease;
+
+    
 `
 
 export const Wrapper = styled.div`
@@ -25,6 +27,7 @@ export const Wrapper = styled.div`
     height: 60vh;
     box-shadow: 
     0 0 5px 1px black 
+
 `
 
 export const IconRow = styled.div`
@@ -44,6 +47,10 @@ export const Icon = styled.img`
     max-width: 10vw;
     height: auto;
     width: auto;
+    @media screen and (max-width: 800px){
+        max-height: 40vh;
+        max-width: 30vw;
+    }
 `
 
 export const IconWrapper = styled.a`

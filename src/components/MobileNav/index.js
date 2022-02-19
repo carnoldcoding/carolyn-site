@@ -16,7 +16,7 @@ const MobileNav = ({toggle, isOpen}) => {
       <SidebarWrapper>
         <MobileItemWrapper>
           <MobileItem>About</MobileItem>
-          <MobileItem>Services</MobileItem>
+          <MobileItem>Coaching</MobileItem>
           <MobileItem>Contact</MobileItem>
         </MobileItemWrapper>
       </SidebarWrapper>

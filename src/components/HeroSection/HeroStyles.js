@@ -18,6 +18,12 @@ const fadeUp = keyframes`
     }
 `
 
+const grow = keyframes`
+    100%{
+        transform: scaleX(1);
+    }
+`
+
 /*
     ==Divs==
 */
@@ -77,9 +83,29 @@ export const ButtonWrapper = styled.div`
     
     transform: translateY(10vh);
     opacity: 0;
-    animation:${fadeUp} 1s ease 1s forwards;
+    animation:${fadeUp} 1s ease 2s forwards;
 `
 
 export const Button = styled(LinkS)`
 
+`
+
+export const BannerWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+    color: white;
+    background: var(--blue);
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: ${grow} 1s ease forwards 1s;
+`
+
+export const Banner = styled.div`
+    font-size: 2.2rem;
+    @media screen and (max-width: 800px){
+        font-size: 1.2rem;
+    }
 `

@@ -1,13 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar'
 import MobileNav from './components/MobileNav'
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import CardSection from './components/CardSection';
 import FooterSection from './components/FooterSection';
-import {useState} from 'react'
-
-import {information} from './components/AboutSection/data'
+import { useState } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +14,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar toggle={toggle} isOpen={isOpen}/>
-      <MobileNav toggle={toggle} isOpen={isOpen}/>
-      <HeroSection/>
-      <AboutSection {...information}/>
-      <CardSection />
-      <FooterSection />
+      <Router>
+        <Navbar toggle={toggle} isOpen={isOpen}/>
+        <MobileNav toggle={toggle} isOpen={isOpen}/>
+
+        <Routes>
+          <Route exact path="/" element={<LandingPage/>}/>
+        </Routes>
+        
+        <FooterSection />
+      </Router>
     </div>
   );
 }

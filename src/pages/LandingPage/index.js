@@ -9,8 +9,8 @@ const LandingPage = () => {
   return (
       <>
         <HeroSection/>
-        <AboutSection/>
-        <CardSection {...information}/>
+        <AboutSection {...information}/>
+        <CardSection />
         <ServiceSection {...services}/>
       </>
   )

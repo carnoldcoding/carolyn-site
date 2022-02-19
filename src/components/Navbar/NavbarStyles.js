@@ -1,6 +1,7 @@
 import { css, keyframes } from "styled-components"
 import styled from 'styled-components'
 import logo from '../../assets/nav_logo_sharaway.png'
+import {NavLink as Link} from 'react-router-dom'
 
 //==Animations==
 
@@ -60,7 +61,7 @@ export const ItemsWrapper = styled.div`
     }
 `
 
-export const NavLink = styled.div`
+export const NavLink = styled(Link)`
     text-decoration: none;
     color: black;
     transition: all .2s ease;

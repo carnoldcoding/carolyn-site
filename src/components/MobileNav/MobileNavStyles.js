@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import css from "styled-components"
+import {NavLink as Link} from 'react-router-dom';
 
 export const MobileContainer = styled.div`
     display: flex;
@@ -39,8 +40,9 @@ export const MobileItemWrapper = styled.div`
     gap: 3rem;
 `
 
-export const MobileItem = styled.div`
-    
+export const MobileItem = styled(Link)`
+    text-decoration: none;
+    color: black;
 `
 
 export const MobileBars = styled.div`

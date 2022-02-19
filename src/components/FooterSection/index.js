@@ -33,7 +33,7 @@ const Footer = () => {
                             Contact
                         </InfoHeader>
                         <Info>
-                            Sharaway Strategic Development Counseling
+                            Sharaway Strategic Development Consulting
                         </Info>
                         <Info>
                             Carolyn Sharaway | 917.518.4988

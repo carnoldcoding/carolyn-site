@@ -17,9 +17,9 @@ const Navbar = ({toggle, isOpen}) => {
                 <Logo/>
             </LogoWrapper>
             <ItemsWrapper>
-                <NavLink animate={true} delay={"0s"}> About </NavLink>
-                <NavLink animate={true} delay={".75s"}> Coaching </NavLink>
-                <NavLink animate={true} delay={"1.5s"}> Contact </NavLink>
+                <NavLink to="/" animate={true} delay={"0s"}> About </NavLink>
+                <NavLink to="/coaching" animate={true} delay={".75s"}> Coaching </NavLink>
+                <NavLink to="/contact" animate={true} delay={"1.5s"}> Contact </NavLink>
             </ItemsWrapper>
         </NavContainer>
     </>

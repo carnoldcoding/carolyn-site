@@ -15,9 +15,9 @@ const MobileNav = ({toggle, isOpen}) => {
     <MobileContainer isOpen={isOpen}>
       <SidebarWrapper>
         <MobileItemWrapper>
-          <MobileItem>About</MobileItem>
-          <MobileItem>Coaching</MobileItem>
-          <MobileItem>Contact</MobileItem>
+          <MobileItem to="/">About</MobileItem>
+          <MobileItem to="/coaching">Coaching</MobileItem>
+          <MobileItem to="/contact">Contact</MobileItem>
         </MobileItemWrapper>
       </SidebarWrapper>
     </MobileContainer>

@@ -106,6 +106,6 @@ export const BannerWrapper = styled.div`
 export const Banner = styled.div`
     font-size: 2.2rem;
     @media screen and (max-width: 800px){
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 `

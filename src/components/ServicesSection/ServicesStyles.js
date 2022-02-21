@@ -35,12 +35,15 @@ export const HeaderWrapper = styled.div`
     font-size: 2rem;
     border-radius: 1rem;
     width: 100%;
+    
+
 
     transition: all .2s ease;
 
     :hover{
         cursor: pointer;
         transform: scale(1.05);
+        box-shadow: 0 2px 3px 1px black;
     }
 `
 
@@ -62,6 +65,8 @@ export const ContentWrapper = styled.div`
     transform-origin: top;
     transition: all .2s ease;
     transform: ${props=>props.isOpen ? "scaleY(1);" : "scaleY(0)"};
+    border-radius: 0 0 1rem 1rem;
+
 `
 
 export const Content = styled.div`

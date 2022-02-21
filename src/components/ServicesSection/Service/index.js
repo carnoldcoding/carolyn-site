@@ -9,7 +9,7 @@ import {
 } from './ServiceStyles';
 import {useState} from 'react'
 
-const Service = ({}) => {
+const Service = ({header, content}) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -21,12 +21,12 @@ const Service = ({}) => {
             <Wrapper>
                 <HeaderWrapper onClick={toggle}>
                     <Header>
-                        Header
+                        {header}
                     </Header>
                 </HeaderWrapper>
                 <ContentWrapper isOpen={isOpen}>
                     <Content>
-                        This is where the content goes
+                        {content}
                     </Content>
                 </ContentWrapper>
             </Wrapper>

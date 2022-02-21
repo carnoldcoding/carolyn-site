@@ -12,6 +12,12 @@ export const fadeDown = keyframes`
     }
 `
 
+export const fadeRight = keyframes`
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+`
 /*
     ==Divs==
 */
@@ -62,6 +68,11 @@ export const CardContainer = styled.div`
     
     animation: ${props=>props.animate ? css`${fadeDown} 2s ease forwards ${props=>props.delay}` : "none"};
     overflow: hidden;
+
+    @media screen and (max-width: 800px){
+        transform: translateX(-10vw);
+        animation: ${props=>props.animate ? css`${fadeRight} 2s ease forwards ${props=>props.delay}` : "none"};
+    }
 `
 
 export const CardTitleWrapper = styled.div`

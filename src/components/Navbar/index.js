@@ -5,6 +5,7 @@ import {
   Logo,
   ItemsWrapper,
   NavLink,
+  NavLinkS
 } from './NavbarStyles'
 
 
@@ -13,13 +14,13 @@ const Navbar = ({toggle, isOpen}) => {
   return (
     <>
         <NavContainer isOpen={isOpen}>
-            <LogoWrapper>
+            <LogoWrapper to="hero" duration={1000} smooth={true} spy={true}>
                 <Logo/>
             </LogoWrapper>
             <ItemsWrapper>
-                <NavLink to="/" animate={true} delay={"0s"}> About </NavLink>
-                <NavLink to="/coaching" animate={true} delay={".75s"}> Coaching </NavLink>
-                <NavLink to="/contact" animate={true} delay={"1.5s"}> Contact </NavLink>
+                <NavLinkS to="about" animate={true} delay={"0s"} duration={1000} smooth={true} spy={true}> About </NavLinkS>
+                <NavLinkS to ="services" animate={true} delay={"1.5s"} duration={1000} smooth={true} spy={true}> Services </NavLinkS>
+                <NavLinkS to="contact" animate={true} delay={"1.5s"} duration={1000} smooth={true} spy={true}> Contact </NavLinkS>
             </ItemsWrapper>
         </NavContainer>
     </>

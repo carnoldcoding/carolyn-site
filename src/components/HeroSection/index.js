@@ -15,7 +15,7 @@ import banner from '../../assets/logo.jpg'
 const HeroSection = () => {
   return (
     <>
-    <HeroContainer>
+    <HeroContainer id="hero">
       <ImageWrapper>
         <Image src={banner}></Image>
       </ImageWrapper>
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </Banner>
       </BannerWrapper>
       <ButtonWrapper>
-        <Button to="about" duration={1000} smooth={true} spy={true}>Get Started</Button>
+        <Button to="about" offset={-30} duration={1000} smooth={true} spy={true}>Get Started</Button>
       </ButtonWrapper>
     </HeroContainer>
     </>

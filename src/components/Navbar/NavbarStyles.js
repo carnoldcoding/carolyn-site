@@ -2,16 +2,15 @@ import { css, keyframes } from "styled-components"
 import styled from 'styled-components'
 import logo from '../../assets/nav_logo_sharaway.png'
 import {NavLink as Link} from 'react-router-dom'
+import {Link as LinkS } from 'react-scroll'
 
 //==Animations==
 
 const fadeDown = keyframes`
     0%{
-        transform: translateY(-5vh);
         opacity: 0;
     }
     100%{
-        transform: translateY(1);
         opacity: 1;
     }
 `
@@ -34,9 +33,14 @@ export const NavContainer = styled.nav`
     transition: all .2s ease;
 `
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(LinkS)`
     flex: 1 1 20%;
     justify-content: flex-start;
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
 `
 
 export const Logo = styled.div`
@@ -74,6 +78,23 @@ export const NavLink = styled(Link)`
 
     animation: ${
     props => 
-    props.animate ? css`${fadeDown} .5s ease ${props.delay} forwards`
+    props.animate ? css`${fadeDown} 1.5s ease forwards`
+    : "none"}
+`
+
+export const NavLinkS = styled(LinkS)`
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease;
+    opacity: 0;
+
+    :hover{
+        cursor: pointer;
+        color: var(--accent);
+    }
+
+    animation: ${
+    props => 
+    props.animate ? css`${fadeDown} 1.5s ease forwards`
     : "none"}
 `

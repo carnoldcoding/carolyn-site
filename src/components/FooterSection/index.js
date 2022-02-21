@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <>
         <FooterModal isOpen={isOpen} toggle={toggle}/>
-        <FooterContainer>
+        <FooterContainer id="contact">
             <FooterWrapper>
                 <ContactWrapper>
                     <InfoWrapper>

@@ -39,13 +39,15 @@ export const Header = styled.div`
 export const ContentWrapper = styled.div`
     display: flex;
     width: 85%;
-    padding: 1rem;
+    padding: 2rem;
     background: rgb(163, 160, 153);
 
     transition: all .2s ease;
     
     transform-origin: top;
     transform: ${props=>props.isOpen ? "scaleY(1)" : "scaleY(0)"};
+    position: ${props=>props.isOpen ? "relative":"absolute"};
+
 `
 
 export const Content = styled.div`

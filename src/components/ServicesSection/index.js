@@ -28,9 +28,9 @@ const Services = ({boxHeader}) => {
                         </Header>
                     </HeaderWrapper>
                     <ContentWrapper isOpen={isOpen}>
-                        <Service {...service1}/>
-                        <Service {...service2}/>
-                        <Service {...service3}/>
+                        <Service {...service1} parentOpen={isOpen}/>
+                        <Service {...service2} parentOpen={isOpen}/>
+                        <Service {...service3} parentOpen={isOpen}/>
                     </ContentWrapper>
                 </BoxWrapper>
             </Wrapper>

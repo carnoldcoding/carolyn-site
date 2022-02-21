@@ -1,3 +1,5 @@
+import coaching from '../../assets/SSDC_Coaching.pdf'
+
 export const services = {
     boxHeader: "Menu of Services"
 }
@@ -34,14 +36,16 @@ export const service3 = {
     header: "Coaching",
     content: 
     <>
-    <p>Do you have great staff and volunteers that would benefit from regular support and guidance on fundraising strategy and implementation?   Services include one-on-one coaching sessions, weekly check-ins and prompts for development timeline implementation on a wide array of fundraising strategies.</p>
+    <p>Do you have great staff and volunteers that would benefit from regular support and guidance on fundraising strategy and implementation?   Services include one-on-one coaching sessions, weekly check-ins and prompts for development timeline implementation on a wide array of fundraising strategies. Here is what we offer: </p>
     <br/>
     <ul>
         <li><b>Development staff coaching</b></li>
         <br/>
         <li><b>Board fundraising and coaching</b></li>
-        <br/>
+        <br/> 
         <li><b>Executive and leadership coaching</b></li>
     </ul>
+    <br/>
+    <p>We offer a comprehensive PDF to learn more about our coaching. To view or download, <a href={coaching} target="_blank">click here</a></p>
     </>
 }

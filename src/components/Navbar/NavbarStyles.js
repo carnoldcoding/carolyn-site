@@ -1,6 +1,8 @@
 import { css, keyframes } from "styled-components"
 import styled from 'styled-components'
 import logo from '../../assets/nav_logo_sharaway.png'
+import logo_mobile from '../../assets/nav_logo_sharaway_mobile.png'
+
 import {NavLink as Link} from 'react-router-dom'
 import {Link as LinkS } from 'react-scroll'
 
@@ -36,19 +38,26 @@ export const NavContainer = styled.nav`
 export const LogoWrapper = styled(LinkS)`
     flex: 1 1 20%;
     justify-content: flex-start;
-
-    :hover{
-        cursor: pointer;
-        transform: scale(1.05);
-    }
 `
 
 export const Logo = styled.div`
     background: url(${logo});
     height: 100%;
+    width: 10em;
     min-width: 10em;
     background-size: contain;
     background-repeat: no-repeat;
+
+    transition: all .2s ease;
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 800px){
+        background-image: url(${logo_mobile});
+    }
 `
 
 export const ItemsWrapper = styled.div`

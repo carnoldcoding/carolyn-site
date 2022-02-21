@@ -34,10 +34,13 @@ export const HeaderWrapper = styled.div`
         box-shadow: 0 2px 3px 1px black;
 
     }
+
+    @media screen and (max-width: 800px){
+        font-size: 1rem;
+    }
 `
 
 export const Header = styled.div`
-
 `
 
 export const ContentWrapper = styled.div`
@@ -53,6 +56,10 @@ export const ContentWrapper = styled.div`
     transform: ${props=>props.isOpen ? "scaleY(1)" : "scaleY(0)"};
     position: ${props=>props.isOpen ? "relative":"absolute"};
     border-radius: 0 0 1rem 1rem;
+
+    @media screen and (max-width: 800px){
+        width: 75%;
+    }
 
 `
 

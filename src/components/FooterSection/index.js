@@ -40,10 +40,9 @@ const Footer = () => {
                         </Info>
                     </InfoWrapper>
                     <IconsWrapper>
-                        <Icon><FaFacebook /></Icon>
-                        <Icon><FaLinkedin /></Icon>
-                        <Icon><FaTwitter /></Icon>
-                        <Icon><FaEnvelope /></Icon>
+                        <Icon href="https://www.facebook.com/sharawaystrategicconsulting" target="_blank"><FaFacebook /></Icon>
+                        <Icon href="https://www.linkedin.com/company/sharaway-strategic-development-consulting/" target="_blank"><FaLinkedin /></Icon>
+                        <Icon href="mailto:carolyn@sharawayconsulting.com"><FaEnvelope /></Icon>
                     </IconsWrapper>
                     <ClientListWrapper>
                         <ClientListButton onClick={toggle}>

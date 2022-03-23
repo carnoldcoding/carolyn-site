@@ -65,7 +65,7 @@ export const IconsWrapper = styled.div`
     font-size: 2rem;
 `
 
-export const Icon = styled.div`
+export const Icon = styled.a`
     transition: all .2s ease;
     :hover{
         color: var(--lightblue);

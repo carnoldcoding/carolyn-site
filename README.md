@@ -2,4 +2,4 @@
 
 This website is hosted at www.sharawayconsulting.com
 
-Fixed DNS Propagation issues.
+Fixed DNS Propagation issues. All good.

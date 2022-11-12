@@ -8,7 +8,7 @@ import {
   Icon,
   CloseWrapper,
   CloseButton
-} from './FooterModalStyles'
+} from './ClientModalStyles'
 import {FaWindowClose} from 'react-icons/fa'
 import client1 from '../../../assets/client_1.png'
 import client2 from '../../../assets/client_2.png'
@@ -19,7 +19,8 @@ import client6 from '../../../assets/client_6.png'
 import client7 from '../../../assets/client_7.jpg'
 
 
-const FooterModal = ({isOpen, toggle}) => {
+const ClientModal = ({isOpen, toggle}) => {
+  
   return (
     <>
         <Container isOpen={isOpen}>
@@ -48,4 +49,4 @@ const FooterModal = ({isOpen, toggle}) => {
   )
 }
 
-export default FooterModal
+export default ClientModal

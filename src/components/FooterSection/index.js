@@ -7,13 +7,10 @@ import {
     InfoHeader,
     Info,
     IconsWrapper,
-    Icon,
-    ClientListWrapper,
-    ClientListButton
+    Icon
 } from './FooterStyles'
 
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
-import FooterModal from './FooterModal';
 import { useState } from 'react';
 
 const Footer = () => {
@@ -24,7 +21,6 @@ const Footer = () => {
     }
   return (
     <>
-        <FooterModal isOpen={isOpen} toggle={toggle}/>
         <FooterContainer id="contact">
             <FooterWrapper>
                 <ContactWrapper>
@@ -36,6 +32,9 @@ const Footer = () => {
                             Sharaway Strategic Development Consulting
                         </Info>
                         <Info>
+                            <a href="mailto:carolyn@sharawayconsulting.com">Carolyn@SharawayConsulting.com</a>
+                        </Info>
+                        <Info>
                             Carolyn Sharaway | 917.518.4988
                         </Info>
                     </InfoWrapper>
@@ -44,11 +43,6 @@ const Footer = () => {
                         <Icon href="https://www.linkedin.com/company/sharaway-strategic-development-consulting/" target="_blank"><FaLinkedin /></Icon>
                         <Icon href="mailto:carolyn@sharawayconsulting.com"><FaEnvelope /></Icon>
                     </IconsWrapper>
-                    <ClientListWrapper>
-                        <ClientListButton onClick={toggle}>
-                            Client List
-                        </ClientListButton>
-                    </ClientListWrapper>
                 </ContactWrapper>
             </FooterWrapper>
         </FooterContainer>

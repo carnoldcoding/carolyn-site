@@ -14,8 +14,6 @@ export const Container = styled.div`
 
     transform: ${props=>props.isOpen ? "scaleY(1)" : "scaleY(0)"};
     transition: all .5s ease;
-
-    
 `
 
 export const Wrapper = styled.div`
@@ -27,7 +25,6 @@ export const Wrapper = styled.div`
     height: 60vh;
     box-shadow: 
     0 0 5px 1px black 
-
 `
 
 export const IconRow = styled.div`

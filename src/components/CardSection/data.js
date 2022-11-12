@@ -11,6 +11,7 @@ export const card1 = {
     <ul>
         <li>Individualized attention by experienced consultants who really care about your mission and your success</li>
         <li>A development strategy that fits your unique needs and situations</li>
+        <li>We will work on projects of any size and shape</li>
         <li>Tangible results that are attainable and sustainable</li>
         <li>Open access to knowledgeable consultants for quick questions, troubleshooting, and to celebrate your successes</li>
     </ul>,
@@ -22,7 +23,7 @@ export const card2 = {
     title: "Vision Statement",
     subtitle: "The goal of SSDC is to facilitate a joyful connection between the donor and non-profit.",
     modalHeader: "Our Goal",
-    modalContent: "SSDC supports the nonprofit by acting as a trusted advisors whose mission and vision aligns with her own; their constituencies through enhanced impact of the organizations mission; and her family by providing resources and lifestyle that fulfills our dreams.",
+    modalContent: "SSDC supports your nonprofit by acting as a trusted advisor whose mission and vision aligns with your own; will act as your constituency through enhanced impact of the organization's mission; and be part of your family by providing resources and lifestyle that fulfills our dreams.",
     background: bg2,
     delay: '.5s'
 }
@@ -32,7 +33,7 @@ export const card3 = {
     subtitle: "As a Certified Fund Raising Executive (CFRE), Carolyn holds the only accredited, globally recognized certification for fundraising professionals.",
     modalHeader: "What is a CFRE?",
     modalContent: <p>To earn CFRE certification, fundraising professionals must meet education, professional practice, and professional performance requirements, pass a comprehensive exam on best practices in ethical fundraising; and attest that they are knowledgeable and abide by the International Statement of Ethical Principles in Fundraising as well as laws governing fundraising in their region of practice. <br/><br/>
-    By hiring a CFRE professional, you have full confidence that your fundraising team members are using current best practices, are from knowledgeable backgrounds and are dedicated to ethical fundraising. <br/><br/>Carolyn Sharaway's 16-year career in the nonprofit sector began in direct service to under served populations and was the catalyst to pursue fundraising as a career. She developed her skills in institutional advancement for health and education organizations which led to the management of multi-year, sustainable fundraising and development projects. Carolyn earned a Bachelor of Science degree in Psychology from Stony Brook University and a master’s degree in Nonprofit Management from Milano School of International Affairs, Management, and Urban Policy in New York City. <br/><br/>
+    By hiring a CFRE professional, you have full confidence that your fundraising team members are using current best practices, are from knowledgeable backgrounds and are dedicated to ethical fundraising. <br/><br/>Carolyn Sharaway's 17-year career in the nonprofit sector began in direct service to under served populations and was the catalyst to pursue fundraising as a career. She developed her skills in institutional advancement for health and education organizations which led to the management of multi-year, sustainable fundraising and development projects. Carolyn earned a Bachelor of Science degree in Psychology from Stony Brook University and a master’s degree in Nonprofit Management from Milano School of International Affairs, Management, and Urban Policy in New York City. <br/><br/>
     She is a Certified Fundraising Executive (CFRE), has a certificate in Planned Giving authorized by University of California, Davis, and sits on the Marketing and Communications Committee for Philanthropic Planning Group of Greater New York.</p>,
     background: bg3,
     delay: '1s'

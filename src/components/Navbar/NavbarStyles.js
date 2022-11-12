@@ -67,6 +67,7 @@ export const ItemsWrapper = styled.div`
     align-items: center;
     gap: 3rem;
     font-size: 1.3rem;
+    margin-right: 20px;
 
 
     @media screen and (max-width: 800px){
@@ -92,6 +93,23 @@ export const NavLink = styled(Link)`
 `
 
 export const NavLinkS = styled(LinkS)`
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease;
+    opacity: 0;
+
+    :hover{
+        cursor: pointer;
+        color: var(--accent);
+    }
+
+    animation: ${
+    props => 
+    props.animate ? css`${fadeDown} 1.5s ease forwards`
+    : "none"}
+`
+
+export const NavClient = styled.div`
     text-decoration: none;
     color: black;
     transition: all .2s ease;

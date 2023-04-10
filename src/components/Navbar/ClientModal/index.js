@@ -17,9 +17,10 @@ import client4 from '../../../assets/client_4.jpg'
 import client5 from '../../../assets/client_5.png'
 import client6 from '../../../assets/client_6.png'
 import client7 from '../../../assets/client_7.jpg'
+import {useState} from 'react';
 
 
-const ClientModal = ({isOpen, toggle}) => {
+const ClientModal = ({toggle, isOpen}) => {
   
   return (
     <>

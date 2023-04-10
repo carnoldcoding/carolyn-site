@@ -24,19 +24,23 @@ export const Wrapper = styled.div`
     padding: 1rem;
     height: 60vh;
     box-shadow: 
-    0 0 5px 1px black 
+    0 0 5px 1px black;
+    width: 450px;
 `
 
 export const IconRow = styled.div`
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
     justify-content: center;
+    overflow: scroll;
 `
 
 export const IconColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 225px;
 `
 
 export const Icon = styled.img`
@@ -51,6 +55,7 @@ export const Icon = styled.img`
 `
 
 export const IconWrapper = styled.a`
+    flex-basis: 40%;
     transition: .2s all ease;
     :hover{
         transform: scale(1.1);

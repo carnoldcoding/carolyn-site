@@ -5,6 +5,7 @@ import FooterSection from './components/FooterSection';
 import { useState } from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+import FormPage from './pages/FormPage'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<LandingPage/>}/>
+          <Route exact path="/form" element={<FormPage/>}/>
         </Routes>
         
         <FooterSection/>

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import MobileNav from './components/MobileNav'
 import FooterSection from './components/FooterSection';
 import { useState } from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import FormPage from './pages/FormPage'
 

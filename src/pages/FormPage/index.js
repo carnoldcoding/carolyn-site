@@ -1,9 +1,10 @@
 import React from 'react'
+import ProjectDetailForm from '../../components/ProjectDetailForm'
 
 const FormPage = () => {
   return (
       <>
-      <h1>Form Page</h1>
+      <ProjectDetailForm/>
       </>
   )
 }

@@ -10,7 +10,7 @@ const mobileNav = {
 };
 
 window.addEventListener('load', ()=> {
-    window.addEventListener('click', (e: MouseEvent)=> {
+    window.addEventListener('touchstart', (e: TouchEvent)=> {
         const target = e.target as HTMLElement;
         console.log(target.classList)
         if(target.id == "mobile-nav-icon" || target.id == "mobile-nav" || Array.from(target.classList).includes('nav-item')){

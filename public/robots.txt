@@ -1,0 +1,14 @@
+# Allow all crawlers access to the entire site
+User-agent: *
+Disallow:
+
+# Ensure Googlebot can index all content
+User-agent: Googlebot
+Allow: /
+
+# If you have images or other important media, ensure they are accessible
+Allow: /images/
+Allow: /assets/
+
+# Sitemap - make sure to specify your sitemap if you have one (optional for a single-page site)
+Sitemap: https://www.sharawayconsulting.com/sitemap.xml
